@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net48</TargetFrameworks>
-    <Title>Rampastring.Tools</Title>
+    <TargetFrameworks>net8.0;net7.0;net481;net48</TargetFrameworks>
+    <Title>Rampastring.RS.Tools</Title>
     <Description>Rampastring's Generally Useful Library</Description>
     <Company>Rampastring</Company>
-    <Product>Rampastring.Tools</Product>
+    <Product>Rampastring.RS.Tools</Product>
     <Copyright>Copyright © Rami 'Rampastring' Pasanen 2016-2023</Copyright>
     <Trademark></Trademark>
     <AssemblyName>Rampastring.Tools</AssemblyName>
@@ -23,9 +23,9 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageId>Rampastring.Tools</PackageId>
+    <PackageId>Rampastring.RS.Tools</PackageId>
     <PackageTags></PackageTags>
-    <PackageProjectUrl>https://github.com/Rampastring/Rampastring.Tools</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Rans4ckeR/Rampastring.Tools</PackageProjectUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
@@ -36,7 +36,7 @@
     <None Include="LICENSE.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.18-beta" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.49-beta" PrivateAssets="All" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507">
       <PrivateAssets>all</PrivateAssets>

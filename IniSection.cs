@@ -13,7 +13,7 @@ using System.IO;
 /// </summary>
 public class IniSection : IIniSection
 {
-    public List<KeyValuePair<string, string>> Keys = new();
+    public List<KeyValuePair<string, string>> Keys = [];
 
     public IniSection()
     {

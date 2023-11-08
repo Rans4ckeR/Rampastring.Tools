@@ -14,7 +14,7 @@ using System.Text;
 /// </summary>
 public class IniFile : IIniFile
 {
-    protected List<IniSection> Sections = new();
+    protected List<IniSection> Sections = [];
 
     private const string TextBlockBeginIdentifier = "$$$TextBlockBegin$$$";
     private const string TextBlockEndIdentifier = "$$$TextBlockEnd$$$";

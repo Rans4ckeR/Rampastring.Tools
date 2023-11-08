@@ -92,7 +92,7 @@ public static class SafePath
 
         paths = paths.Where(p => !string.IsNullOrWhiteSpace(p)).ToArray();
 
-        if (!paths.Any())
+        if (paths.Length == 0)
             return null;
 
         if (paths.Length == 1)
