@@ -561,6 +561,18 @@ public class IniFile : IIniFile
         return section != null && section.KeyExists(keyName);
     }
 
+    /// <summary>
+    /// Removes a key from the given section in the INI file.
+    /// </summary>
+    /// <param name="sectionName">The name of the section to remove the key from.</param>
+    /// <param name="key">The key to remove from the section.</param>
+    public void RemoveKey(string sectionName, string key)
+    {
+        IniSection section = GetSection(sectionName);
+
+        section?.RemoveKey(key);
+    }
+
     protected virtual void ApplyBaseIni()
     {
         string basedOn = GetStringValue("INISystem", "BasedOn", string.Empty);

@@ -42,6 +42,8 @@ public interface IIniFile
 
     bool KeyExists(string sectionName, string keyName);
 
+    void RemoveKey(string sectionName, string key);
+
     void Parse();
 
     void Reload();
