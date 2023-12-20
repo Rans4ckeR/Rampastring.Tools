@@ -1,14 +1,19 @@
 ﻿namespace Rampastring.Tools;
 
 using System.Globalization;
+#if NETFRAMEWORK
 using System.Runtime.Serialization;
+#endif
 using System.Text;
 
 /// <summary>
 /// A StringBuilder that can automatically add a separator between
 /// appended strings.
 /// </summary>
-public class ExtendedStringBuilder : ISerializable
+public class ExtendedStringBuilder
+#if NETFRAMEWORK
+    : ISerializable
+#endif
 {
     private readonly StringBuilder stringBuilder;
 
@@ -66,7 +71,9 @@ public class ExtendedStringBuilder : ISerializable
 
         return stringBuilder.ToString();
     }
+#if NETFRAMEWORK
 
     public void GetObjectData(SerializationInfo info, StreamingContext context)
         => ((ISerializable)stringBuilder).GetObjectData(info, context);
+#endif
 }
