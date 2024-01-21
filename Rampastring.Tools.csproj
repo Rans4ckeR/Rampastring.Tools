@@ -5,7 +5,7 @@
     <Description>Rampastring's Generally Useful Library</Description>
     <Company>Rampastring</Company>
     <Product>Rampastring.RS.Tools</Product>
-    <Copyright>Copyright © Rami 'Rampastring' Pasanen 2016-2023</Copyright>
+    <Copyright>Copyright © Rami 'Rampastring' Pasanen 2016-2024</Copyright>
     <Trademark></Trademark>
     <AssemblyName>Rampastring.Tools</AssemblyName>
     <RootNamespace>Rampastring.Tools</RootNamespace>
@@ -36,7 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.49-beta" PrivateAssets="All" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507">
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
